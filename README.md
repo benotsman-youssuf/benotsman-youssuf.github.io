@@ -1,7 +1,7 @@
 ![Header](./header.png)
 
 <h1 align="center">Hi 👋, I'm youssef</h1>
-<h3 align="center">a first-year computer science student interested in AI 
+<h3 align="center"> A first-year computer science student interested in AI 
 
 - 💻 I’m currently learning **programming**
 

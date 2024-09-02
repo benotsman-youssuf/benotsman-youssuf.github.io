@@ -1,72 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youssuf Benotsman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "IBM Plex Mono", monospace;
+        cursor: text;
+      }
+
+      *::selection {
+        background-color: #00ffab;
+        color: #2c3539;
+      }
+
+      body {
+        background-color: #2c3539;
+        color: #d3d3d3;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .main-container {
+        height: fit-content;
+        padding: 20px;
+      }
+
+      .ascii-name {
+        color: #fbcb0a;
+        font-size: 0.7vw;
+        margin-top: 15px;
+      }
+
+      .message-text {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 20px 0;
+      }
+
+      .help-text {
+        font-size: 17px;
+        font-weight: 400;
+        color: #00ffab;
+      }
+
+      .command-output {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .input-label {
+        color: #fbcb0a;
+      }
+
+      .input-command {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      .input-text {
+        color: #00ffab;
+      }
+
+      .command-not-found {
+        font-size: 17px;
+        color: #ff0032;
+      }
+
+      .data-dt {
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 10px;
+        text-transform: lowercase;
+        color: #fbcb0a;
+      }
+      .data-dd {
+        margin-top: 5px;
+        margin-left: 20px;
+      }
+
+      .data-li {
+        text-transform: capitalize;
+        list-style-type: square;
+        font-weight: 400;
+      }
+
+      .about-text {
+        font-weight: 400;
+      }
+
+      .data-table {
+        border-collapse: collapse;
+        color: #fff;
+      }
+
+      .data-name-th {
+        text-align: left;
+        padding-bottom: 20px;
+      }
+
+      .data-description-td {
+        padding-bottom: 20px;
+        vertical-align: top;
+        padding-left: 20px;
+      }
+
+      .data-link {
+        text-decoration-style: solid;
+        color: #fbcb0a;
+        cursor: pointer;
+      }
+    </style>
   </head>
-<body>
-  <div class="animated-bg"></div>
-  <main>
-    <section id="about">
-        <div class="profile-image">
-          <img src="./img/me-fotor-20240323183831.png" alt="Profile Image">
-        </div>
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p>Hi, I'm Benotsman Youssuf, a Computer Science freshman at UHBC. I'm passionate about web development and constantly expanding my skills.</p>
-        </div>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Git <i class="fa-solid fa-code-compare"></i></li>
-          <li><i class="fa-brands fa-github"></i> GitHub</li>
-          <li>HTML <i class="fa-brands fa-html5"></i></li>
-          <li>CSS <i class="fa-brands fa-css3"></i></li>
-          <li>JavaScript <i class="fa-brands fa-html5"></i></li>
-          <li>C++</li>
-          <li>VS Code</li>
-        </ul>
-      </section>
-      <section id="projects">
-        <h2>projects</h2>
-        <ul>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/challenge_01" target="_blank">challenge 01</a></li>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/challenge_02" target="_blank">challenge 02</a></li>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/challenge_03" target="_blank">challenge 03</a></li>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/challenge_04" target="_blank">challenge 04</a></li>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/extra/QrCode" target="_blank">QR card</a></li>
-          <li><a href="https://youssuf.tech/Web-Bootcamp/extra/iphone" target="_blank">Iphone UI</a></li>
-          <li><a href="https://youssuf.tech/HadithGenerator/" target="_blank">Hadith Generator</a></li>
-          <li><a href ="https://youssuf.tech/Flard/">Flard</a></li>
-        </ul>
-      </section> 
-  <script src="./script.js"></script>
-  </main>
-</body>
+  <body>
+    <div class="main-container">
+      <pre class="ascii-name">
+ __   __                        __   ______                 _                         
+ \ \ / /__  _   _ ___ ___ _   _/ _|  | __ ) ___ _ __   ___ | |_ ___ _ __ ___    __ _ _ __  
+  \ V / _ \| | | / __/ __| | | | |_  |  _ \/ _ \ '_ \ / _ \| __/ __| '_ ` _ \  / _` | '_ \ 
+   | | (_) | |_| \__ \__ \ |_| |  _| | |_) |  __/ | | | (_) | |_\__ \ | | | | | (_| | | | |
+   |_|\___/ \__,_|___/___/\__,_|_|   |____/ \___|_| |_|\___/ \__|___/_| |_| |_|\__,_|_| |_|
+      </pre>
+      <div class="introduction">
+        <h3 class="message-text">
+          Welcome to my terminal portfolio!
+        </h3>
+        <h4 class="message-text">
+          Type <span class="help-text">'help'</span> to view a list of available
+          commands.
+        </h4>
+      </div>
+      <div id="command-output">
+        <!-- all the command results goes here -->
+      </div>
+      <div class="input-container">
+        <label for="command" class="input-label">></label>
+        <input
+          type="text"
+          name="command"
+          id="command"
+          class="input-command input-text"
+          autofocus
+        />
+      </div>
+    </div>
+    <script>
+      const about = "I'm a Computer Science student passionate about mobile development and AI. Currently working on Flutter projects and exploring AI technologies. Always learning and growing in the tech world!";
+      const roles = ["CS Student", "Flutter Developer", "Django Developer", "AI Enthusiast"];
+      const skills = ["Flutter", "Django", "AI", "Mobile Development", "Backend Development"];
+      const projects = [
+        { title: "GetAyah", url: "https://youssuf.tech/GetAyah", description: "A project related to Quranic verses" },
+        { title: "Flard", url: "https://youssuf.tech/Flard", description: "A Flutter-based project" },
+        { title: "Adhan", url: "https://youssuf.tech/Adhan", description: "An Islamic prayer times app" },
+        { title: "Flashcard API", url: "#", description: "A backend API for flashcard applications" }
+      ];
+      const achievements = [
+        { title: "First Year CS Student", url: "#", description: "Successfully completing my first year in Computer Science" },
+        { title: "Flutter Projects", url: "#", description: "Developed multiple Flutter applications" },
+        { title: "Backend Development", url: "#", description: "Created a Flashcard API using Django" }
+      ];
+      const email = "benotsman.youssuf@gmail.com";
+      const github = "https://github.com/benotsman-youssuf/";
+
+      const command = document.getElementById("command");
+      const commandOutput = document.getElementById("command-output");
+
+      const commandHistory = [];
+      let historyIndex = 0;
+
+      const focusOnCommandInput = () => {
+        command.focus();
+      };
+
+      document.addEventListener("keydown", focusOnCommandInput);
+
+      const showExecutedCommand = () => {
+        const typedCommand = `<div class="input-container">
+              <span class="input-label">></span>
+              <span class="input-command">${command.value}</span>
+            </div>`;
+
+        commandOutput.innerHTML += typedCommand;
+      };
+
+      const showCommandNotFound = () => {
+        return `<div class="command-result">
+                <span class="command-not-found">${command.value}</span>
+                : command not found. Type 'help' to view a list of available commands.
+              </div>`;
+      };
+
+      const emptyCommandInput = () => {
+        command.value = "";
+      };
+
+      const scrollToBottomEnd = () => {
+        window.scrollTo(0, document.body.scrollHeight);
+      };
+
+      const showCommandOutput = (output) => {
+        commandOutput.innerHTML += output;
+      };
+
+      const getAbout = () => {
+        return `<div class="command-result"><p class="about-text">${about}</p></div>`;
+      };
+
+      const getRoles = () => {
+        let renderData = `<div class="command-result">`;
+        roles.forEach((role) => {
+          renderData += `<li class="data-li">${role}</li>`;
+        });
+        renderData += "</div>";
+        return renderData;
+      };
+
+      const getSkills = () => {
+        let renderData = `<div class="command-result">`;
+        skills.forEach((skill) => {
+          renderData += `<li class="data-li">${skill}</li>`;
+        });
+        renderData += "</div>";
+        return renderData;
+      };
+
+      const getProjects = () => {
+        let renderData = `<div class="command-result"><table class="data-table">`;
+        projects.forEach((project) => {
+          renderData += `<tr>
+          <th class="data-name-th"><a href="${project.url}" target="_blank" class="data-link">${project.title}</a></th>
+          <td class="data-description-td">${project.description}</td>
+        </tr>`;
+        });
+        renderData += "</table></div>";
+        return renderData;
+      };
+
+      const getAchievements = () => {
+        let renderData = `<div class="command-result"><table class="data-table">`;
+        achievements.forEach((achievement) => {
+          renderData += `<tr>
+            <th class="data-name-th"><a href="${achievement.url}" target="_blank" class="data-link">${achievement.title}</a></th>
+            <td class="data-description-td">${achievement.description}</td>
+          </tr>`;
+        });
+        renderData += "</table></div>";
+        return renderData;
+      };
+
+      const getContact = () => {
+        let renderData = `<div class="command-result"><dl>`;
+        const contacts = [
+          { contactTitle: "email", contactPlace: email },
+          { contactTitle: "github", contactPlace: github },
+        ];
+        contacts.forEach((item) => {
+          renderData += `<dt class="data-dt">${item.contactTitle}<dt><dd class="data-dd"> - ${item.contactPlace}</dd>`;
+        });
+        renderData += "</dl></div>";
+        return renderData;
+      };
+
+      const getHelp = () => {
+        let renderData = `<div class="command-result"><dl>`;
+        const availableCommands = [
+          { command: "whoami", description: "What I do" },
+          { command: "about", description: "Know about me" },
+          { command: "skills", description: "What tech stacks I use" },
+          { command: "projects", description: "Check out my projects" },
+          { command: "achievements", description: "My achievements" },
+          { command: "contact", description: "How to reach me" },
+          { command: "clear", description: "Clears the terminal of all output" },
+        ];
+        availableCommands.forEach((cmd) => {
+          renderData += `<dt class="data-dt">${cmd.command}<dt><dd class="data-dd"> - ${cmd.description}</dd>`;
+        });
+        renderData += "</dl></div>";
+        return renderData;
+      };
+
+      const executeCommand = () => {
+        const userEnteredCommand = command.value.trim().toLowerCase();
+
+        switch (userEnteredCommand) {
+          case "help":
+            showCommandOutput(getHelp());
+            break;
+          case "whoami":
+            showCommandOutput(getRoles());
+            break;
+          case "about":
+            showCommandOutput(getAbout());
+            break;
+          case "skills":
+            showCommandOutput(getSkills());
+            break;
+          case "projects":
+            showCommandOutput(getProjects());
+            break;
+          case "achievements":
+            showCommandOutput(getAchievements());
+            break;
+          case "contact":
+            showCommandOutput(getContact());
+            break;
+          case "clear":
+            commandOutput.innerHTML = "";
+            break;
+          default:
+            commandOutput.innerHTML += showCommandNotFound();
+        }
+        emptyCommandInput();
+        scrollToBottomEnd();
+        return;
+      };
+
+      const evaluateCommandInput = (event) => {
+        if (event.key === "Enter") {
+          showExecutedCommand();
+          executeCommand();
+        }
+      };
+
+      command.addEventListener("keydown", evaluateCommandInput);
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
